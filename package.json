@@ -1,0 +1,32 @@
+{
+  "name": "talented-ui.contextmenu.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "talented-ui.contextmenu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalentedUI/ContextMenu.git"
+  },
+  "keywords": [
+    "talented-ui",
+    "talentedui",
+    "context-menu",
+    "context",
+    "menu"
+  ],
+  "author": "Salih KARAHAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TalentedUI/ContextMenu/issues"
+  },
+  "homepage": "https://github.com/TalentedUI/ContextMenu#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}
