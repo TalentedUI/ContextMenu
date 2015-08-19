@@ -1,0 +1,23 @@
+div#rootContainer{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    float: left;
+    z-index: 999;
+}
+ul {
+    list-style-type: none;
+    background-color: lightgray;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
+    width: 150px;
+}
+ul > li {
+    display: list-item;
+    background-color: inherit;
+    padding: 5px;
+    border-bottom: 2px solid darkgray;
+}
+ul > li:hover {
+    background-color: #b8b8b8;
+}

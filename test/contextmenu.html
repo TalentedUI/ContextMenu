@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="reset.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="../build/talented-ui.contextmenu.min.css" media="screen" charset="utf-8">
+    <script src="../../Core/build/talented-ui.core.min.js" charset="utf-8"></script>
+    <script src="../build/talented-ui.contextmenu.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="test-area1" style="width:300px; height:300px; background-color:gray;float:left;">
+    </div>
+    <div id="test-area2" style="width:300px; height:300px; background-color:lightblue;float:left;">
+    </div>
+    <div id="test-area3" style="width:300px; height:300px; background-color:lightgreen;float:left;">
+    </div>
+    <script type="text/javascript">
+        // var copy = function() {
+        //     console.log(arguments);
+        // };
+        //
+        // var area = document.getElementById('test-area1');
+        // var contextMenu1 = new TalentedUI.ContextMenu(area, {
+        //     MenuItems: [{
+        //         Name: 'Cut',
+        //         Icon: 'fa fa-cut',
+        //         Action: function() {
+        //             console.log(arguments);
+        //         }
+        //     }, {
+        //         Name: 'Copy',
+        //         Icon: '~/Content/Images/copy2.jpeg',
+        //         Action: copy
+        //     }, {
+        //         Name: 'Paste',
+        //         Icon: '...',
+        //         SubItems: [{
+        //             Name: 'Default Paste',
+        //             Icon: '...',
+        //             Action: function() {
+        //
+        //             }
+        //         }]
+        //     }]
+        // });
+
+        var contextMenu2 = new TalentedUI.ContextMenu('test-area2');
+        contextMenu2
+            .AddMenuItem('fa fa-edit', 'Add New File', function(event) {
+                // console.log('Add New File ->', arguments);
+                console.log('Add New File ->', event);
+                alert('Clicked Add New File');
+            }).AddMenuItem('~/Content/Images/Open.png', 'Open File', function() {
+                console.log('Open File ->', arguments);
+                alert('Clicked Open File');
+            }).Attach();
+
+        // var contextMenu3 = new TalentedUI.ContextMenu();
+        // contextMenu2.AddMenuItem('fa fa-edit', 'Add New File', function() {
+        //     console.log(arguments);
+        // }).AddSubMenuItem({
+        //
+        // }).AddSubMenuItem({
+        //
+        // }).AddMenuItem('~/Content/Images/Open.png', 'Open File', function() {
+        //     console.log(arguments);
+        // }).Attach('test-area3');
+    </script>
+</body>
+
+</html>
