@@ -1,23 +1,73 @@
-div#rootContainer{
+div#rootContainer {
     width: 150px;
     height: auto;
     position: absolute;
     float: left;
     z-index: 999;
+    border: 2px solid darkgray;
 }
-ul {
+div#rootContainer > ul {
     list-style-type: none;
     background-color: lightgray;
     /*margin-left: 10%;
     margin-right: 10%;*/
     width: 150px;
 }
-ul > li {
+div#rootContainer > ul > li {
     display: list-item;
     background-color: inherit;
     padding: 5px;
-    border-bottom: 2px solid darkgray;
+    height: 23px;
 }
-ul > li:hover {
+div#rootContainer > ul > li:hover {
     background-color: #b8b8b8;
+}
+div#rootContainer > ul > li > div {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    float: left;
+    overflow: hidden;
+}
+div#rootContainer > ul > li > div > img, div#rootContainer > ul > li > div > span {}
+div#rootContainer > ul > li > span {
+    float: left;
+    margin-left: 5px;
+}
+div#rootContainer > ul > div.seperator,
+div#rootContainer > ul > li > ul > div.seperator {
+    height: 2px;
+    background-color: green;
+}
+div#rootContainer > ul > li > ul {
+    display: none;
+}
+div#rootContainer > ul > li:hover > ul {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    list-style-type: none;
+    margin-left: 40px;
+}
+div#rootContainer > ul > li > ul > li {
+    height: 23px;
+    background-color: lightgray;
+    padding: 5px;
+}
+div#rootContainer > ul > li > ul > li:hover {
+    background-color: #b8b8b8;
+}
+div#rootContainer > ul > li > ul > li > div {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    float: left;
+    overflow: hidden;
+}
+div#rootContainer > ul > li > ul > li > div > img, div#rootContainer > ul > li > ul > li > div > span {}
+
+div#rootContainer > ul > li > ul > li > span {
+    float: left;
+    margin-left: 5px;
 }
